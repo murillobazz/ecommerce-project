@@ -10,7 +10,6 @@
     const apiResponse = await fetch('https://run.mocky.io/v3/aa837dff-9bf9-4fed-a091-49683cc0a258')
     const products = await apiResponse.json();
     productsList.push(...products);
-    console.log(productsList)
   }
   fetchProducts();
 
@@ -41,13 +40,9 @@
     let itemInCart = cart.find(element => element.id === item.id);
     if (itemInCart) {
       itemInCart.quantity++
-      console.log("Item já estava no carrinho ;)");
-      console.log(cart);
       addItemAlert();
     } else {
       cart.push({...item});
-      console.log("Novo item!");
-      console.log(cart);
       addItemAlert();
     }
 

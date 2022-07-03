@@ -42,6 +42,7 @@ export default defineComponent({
     gap: 0.5em;
 
     padding: 5px;
+    margin-bottom: 20px;
   }
 }
 </style>
