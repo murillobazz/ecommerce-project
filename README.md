@@ -1,10 +1,10 @@
-# 🌎 [E-commerce Project](https://ecommerce-project-six.vercel.app/)
+# 🛒 [E-commerce Project](https://ecommerce-project-six.vercel.app/)
 
 (Este projeto foi feito por [Murillo Bazilio](https://github.com/murillobazz))
 
 ## 📘 Descrição
 
-  O 🌎 [E-commerce Project](https://ecommerce-project-six.vercel.app/) é um pequeno projeto que utiliza Typescript e Vue 3 (Composition API) para simular uma pequena lógica de listagem de produtos (utilizando Fetch API para fazer a requisição da listagem de uma API de exemplo feita no [mocky.io](https://designer.mocky.io/) e um carrinho onde você pode adicionar esses produtos. Nesse carrinho, é possível aumentar ou diminuir a quantidade de um mesmo produto e retirá-lo totalmente do carrinho. A aplicação também conta com responsividade mobile.
+  O 🛒 [E-commerce Project](https://ecommerce-project-six.vercel.app/) é um pequeno projeto que utiliza Typescript e Vue 3 (Composition API) para simular uma pequena lógica de listagem de produtos (utilizando Fetch API para fazer a requisição da listagem de uma API de exemplo feita no [mocky.io](https://designer.mocky.io/) e um carrinho onde você pode adicionar esses produtos. Nesse carrinho, é possível aumentar ou diminuir a quantidade de um mesmo produto e retirá-lo totalmente do carrinho. A aplicação também conta com responsividade mobile.
 
 <hr>
 
