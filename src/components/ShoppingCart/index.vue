@@ -36,13 +36,14 @@
         <p>{{ item.name }}</p>
         <div><input type="number" v-model="item.quantity"></div>
         <p>{{ itemPriceFormatter(item.price, item.quantity) }}</p>
-        <p style="color: red; cursor: pointer; text-align: right;" @click="removeFromCart(item)">x</p>
+        <div><img src="@/assets/trash-can.svg" @click="removeFromCart(item)"/></div>
       </div>
       <br>
       <h3 style="text-align: right;">Valor total: {{ totalPriceFormatter }}</h3>
     </div>  
-    <div class="fade-in" v-else>
-      <p>Carrinho vazio 😑</p>
+    <div style="display: flex; flex-direction: column; align-items: center; gap: 4ch;" class="fade-in" v-else>
+      <h3><b>Nada aqui ainda... 😑</b></h3>
+      <button @click="isCartOpen = !isCartOpen">Vamos às compras! ➡</button>
     </div>
   </div>
 </template>
@@ -89,9 +90,11 @@
   text-align: center;
 }
 
-.cart-item button {
-  max-width:80%;
-
+.cart-item img {
+  width: 25px;
+  height: 25px;
+  place-self: right;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 800px) {

@@ -33,8 +33,8 @@ const product = defineProps<ProductType>();
   align-items: center;
   place-self: center;
 
-  min-width: 200px;
-  max-width: 240px;
+  min-width: 240px;
+  max-width: 360px;
   padding: 10px 20px;
 
   background-color: #f1f1f1;
