@@ -1,4 +1,4 @@
-# 🌎 [E-commerce Project](https://ecommerce-project-six.vercel.app/)
+# 🛒 [E-commerce Project](https://ecommerce-project-six.vercel.app/)
 
 (Este projeto foi feito por [Murillo Bazilio](https://github.com/murillobazz))
 
