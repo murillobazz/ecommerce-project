@@ -7,30 +7,31 @@
   
   const productsList: ProductType[] = [];
   const fetchProducts = async () => {
-    const apiResponse = await fetch('https://run.mocky.io/v3/aa837dff-9bf9-4fed-a091-49683cc0a258')
+    const apiResponse = await fetch('https://run.mocky.io/v3/aace2a42-8ce2-4319-8cc5-8050f0a00513')
     const products = await apiResponse.json();
     productsList.push(...products);
   }
+
   fetchProducts();
-
-
 </script>
 
 <template>
   <header>
     <h1>Cabum>></h1>
     <img class="fade-in" src="./assets/shopping-cart.svg" @click="isCartOpen = !isCartOpen" v-if="!isCartOpen"/>
-    <img class="fade-in" src="./assets/x.svg" @click="isCartOpen = !isCartOpen" style="padding: 10px;" v-else/>
+    <img class="fade-in" src="./assets/x.svg" @click="isCartOpen = !isCartOpen" v-else/>
   </header>
+
   <main>
     <div v-if="!isCartOpen" class="fade-in">
       <h2 style="text-align: center;">Produtos</h2>
       <Vitrine :productsList="productsList"/>
     </div>
     <ShoppingCart v-else/>
-
   </main>
+
 </template>
+
 <script lang="ts">
   export const cart: ProductType[] = reactive([]);
 
@@ -61,7 +62,6 @@
       
     })
   }
-
 </script>
 
 <style>
@@ -81,7 +81,7 @@ header h1 {
 }
 
 header img {
-  padding: 5px 10px;
+  padding: 8px;
 }
 
 header img:hover {
