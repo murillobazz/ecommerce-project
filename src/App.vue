@@ -24,12 +24,15 @@
 
   <main>
     <div v-if="!isCartOpen" class="fade-in">
-      <h2 style="text-align: center;">Produtos</h2>
+      <h2 style="text-align: center; margin: 10px;">Produtos</h2>
       <Vitrine :productsList="productsList"/>
     </div>
     <ShoppingCart v-else/>
   </main>
-
+  
+  <footer>
+    <p>Criado por <a href="https://github.com/murillobazz">Murillo Bazilio</a></p>
+  </footer>
 </template>
 
 <script lang="ts">
@@ -86,6 +89,14 @@ header img {
 
 header img:hover {
   cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 10px;
+  color: #999999;
 }
 
 

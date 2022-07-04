@@ -29,7 +29,7 @@
 </script>
 
 <template>
-  <h2 class="fade-in" style="text-align: center;">Seu carrinho</h2>
+  <h2 class="fade-in" style="text-align: center; margin: 10px;">Seu carrinho</h2>
   
   <div class="fade-in" id="cart">
     <div class="cart-content" v-if="cart.length > 0">
